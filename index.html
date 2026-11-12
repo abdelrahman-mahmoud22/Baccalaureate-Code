@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>بكالوريا كود | مذاكرة البرمجة لأولى وتانية ثانوي</title>
+  <meta name="description" content="بكالوريا كود: بنك أسئلة وامتحانات وتسميعات وحل كويزات وتقييمات لطلاب أولى وتانية ثانوي، مع المهندس عبدالرحمن محمود.">
+  <meta name="theme-color" content="#050b1c">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:title" content="بكالوريا كود | مذاكرة البرمجة لأولى وتانية ثانوي">
+  <meta property="og:description" content="بنك أسئلة وامتحانات وتسميعات وحل كويزات وتقييمات في مكان واحد.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23050b1c'/%3E%3Cpath d='M26 20 14 32l12 12M38 20l12 12-12 12' fill='none' stroke='%232f8cff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#library">انتقل للمكتبة</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-row">
+      <a class="brand" href="#home" aria-label="بكالوريا كود - الرئيسية">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#0e1c3d"/>
+          <path d="M26 20 14 32l12 12M38 20l12 12-12 12" fill="none" stroke="#2f8cff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-text"><strong>بكالوريا كود</strong><small>Baccalaureate Code</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mainNav"><i class="bi bi-list"></i></button>
+
+      <nav class="main-nav" id="mainNav" aria-label="القائمة الرئيسية">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">عنّي</a>
+        <a href="#library">المكتبة</a>
+        <a href="#features">المميزات</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+
+      <a class="btn btn-primary btn-sm header-cta" href="#library">ادخل المكتبة</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>ذاكر البرمجة صح،<br>وادخل الامتحان واثق.</h1>
+          <p class="lead">بنك أسئلة وامتحانات وتسميعات وحل كويزات وتقييمات لأولى وتانية ثانوي، مرتبة بالصف والنوع، وبتفتحها من موبايلك في ثانية.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="button" data-open-grade="first">الصف الأول الثانوي <i class="bi bi-arrow-left"></i></button>
+            <button class="btn btn-outline" type="button" data-open-grade="second">الصف الثاني الثانوي <i class="bi bi-arrow-left"></i></button>
+          </div>
+          <p class="hero-note"><i class="bi bi-unlock"></i> الملفات بتفتح بالرابط، من غير تسجيل دخول.</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-wrap">
+          <figure class="portrait">
+            <img src="assets/images/abdelrahman.jpg" width="816" height="1200" alt="المهندس عبدالرحمن محمود" fetchpriority="high">
+            <figcaption>
+              <strong>المهندس عبدالرحمن محمود</strong>
+              <span>مدرس البرمجة والذكاء الاصطناعي</span>
+            </figcaption>
+          </figure>
+          </div>
+
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal-bar"><i></i><i></i><i></i><span>bacc-code</span></div>
+            <div class="terminal-body" id="termBody" dir="ltr">
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">bacc open first-secondary</span></div>
+              <div class="t-line t-out"><span class="t-ok">✔</span> folders ready</div>
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">bacc open second-secondary</span></div>
+              <div class="t-line t-out"><span class="t-ok">✔</span> folders ready</div>
+              <div class="t-line"><span class="t-prompt">$</span> <span class="t-cursor"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group"><span>Programming</span><span>Artificial Intelligence</span><span>Problem Solving</span><span>Computer Science</span></div>
+        <div class="marquee-group"><span>Programming</span><span>Artificial Intelligence</span><span>Problem Solving</span><span>Computer Science</span></div>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <h2>مين اللي بيشرح؟</h2>
+          <p class="section-sub">التعلم مش حفظ أكواد، هو طريقة تفكير وقدرة تحوّل بيها الفكرة لحل.</p>
+        </div>
+        <div class="about-body">
+          <p>أنا المهندس عبدالرحمن محمود، طالب علوم حاسب، ومهتم بالبرمجة والتكنولوجيا والذكاء الاصطناعي. بحاول أبسّط المفاهيم التقنية وأقدّم تجربة تساعد الطالب يفهم ويطبّق ويبني أساس قوي.</p>
+          <ul class="role-list">
+            <li><i class="bi bi-mortarboard"></i> طالب علوم الحاسب</li>
+            <li><i class="bi bi-person-workspace"></i> مدرس البرمجة والذكاء الاصطناعي</li>
+            <li><i class="bi bi-braces"></i> مؤسس بكالوريا كود</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LIBRARY ================= -->
+    <section class="section library" id="library">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>المكتبة التعليمية</h2>
+          <p class="section-sub">اختار الصف، وبعدين دوّر بالاسم أو فلتر بنوع الملف.</p>
+        </div>
+
+        <div class="explorer">
+          <aside class="tree" aria-label="المجلدات">
+            <p class="tree-title">المجلدات</p>
+            <div class="tree-list" role="tablist" aria-orientation="vertical">
+              <button class="tree-item" type="button" role="tab" data-grade="first"><i class="bi bi-folder2"></i><span>الصف الأول الثانوي</span><b class="tree-count" data-count="first">0</b></button>
+              <button class="tree-item" type="button" role="tab" data-grade="second"><i class="bi bi-folder2"></i><span>الصف الثاني الثانوي</span><b class="tree-count" data-count="second">0</b></button>
+              <button class="tree-item" type="button" role="tab" data-grade="fav"><i class="bi bi-star"></i><span>المفضلة</span><b class="tree-count" data-count="fav">0</b></button>
+            </div>
+          </aside>
+
+          <div class="pane">
+            <div class="pane-bar">
+              <p class="path" dir="ltr" id="pathLine">~/bacc-code/first-secondary</p>
+              <label class="search">
+                <i class="bi bi-search"></i>
+                <input id="searchInput" type="search" placeholder="ابحث عن ملف..." aria-label="ابحث عن ملف" autocomplete="off">
+              </label>
+            </div>
+
+            <div class="chips" id="chips" role="group" aria-label="تصفية حسب نوع الملف"></div>
+
+            <ul class="file-list" id="fileList" aria-live="polite"></ul>
+
+            <div class="empty" id="emptyState" hidden></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="section features" id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>ليه بكالوريا كود؟</h2>
+          <p class="section-sub">كل حاجة متصممة عشان توصل للملف اللي محتاجه بأقل ضغطات.</p>
+        </div>
+        <ul class="feature-grid">
+          <li><i class="bi bi-diagram-3"></i><div><h3>مرتب بالصف والنوع</h3><p>كل مجلد متصنف: بنك أسئلة، امتحانات، تسميعات، كويزات أو تقييمات.</p></div></li>
+          <li><i class="bi bi-search"></i><div><h3>بحث وفلترة فورية</h3><p>اكتب اسم الملف أو اختار النوع، والنتايج بتتغير وانت بتكتب.</p></div></li>
+          <li><i class="bi bi-star"></i><div><h3>مفضلتك على جهازك</h3><p>علّم المجلدات المهمة بنجمة وارجعلها بضغطة. بتتحفظ على نفس الجهاز.</p></div></li>
+          <li><i class="bi bi-phone"></i><div><h3>شغال على الموبايل</h3><p>تصميم متجاوب، وتفتح الملفات من تطبيق Drive أو من المتصفح.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-main">
+          <h2>عندك سؤال؟</h2>
+          <p class="section-sub">ابعتلي على واتساب. وتابع صفحة بكالوريا كود عشان يوصلك كل جديد.</p>
+          <a class="btn btn-primary btn-lg btn-pulse" href="https://wa.me/201226050659?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%B3%D8%A4%D8%A7%D9%84%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D8%A7%20%D9%83%D9%88%D8%AF" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> كلمني على واتساب</a>
+          <p class="contact-phone"><bdi>+20 122 605 0659</bdi></p>
+        </div>
+
+        <ul class="link-list">
+          <li><a href="https://facebook.com/share/19vQiYVnF3" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i><span><strong>صفحة بكالوريا كود</strong><small>Facebook</small></span><i class="bi bi-arrow-up-left go"></i></a></li>
+          <li><a href="https://www.facebook.com/share/1ChfyuAKzL/" target="_blank" rel="noopener noreferrer"><i class="bi bi-person-circle"></i><span><strong>حسابي الشخصي</strong><small>Facebook</small></span><i class="bi bi-arrow-up-left go"></i></a></li>
+          <li><a href="https://www.instagram.com/abdlrahman_mahmoud28/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i><span><strong>إنستجرام</strong><small><bdi>@abdlrahman_mahmoud28</bdi></small></span><i class="bi bi-arrow-up-left go"></i></a></li>
+          <li><a href="mailto:abdelrahman2210022@gmail.com"><i class="bi bi-envelope"></i><span><strong>البريد الإلكتروني</strong><small><bdi>abdelrahman2210022@gmail.com</bdi></small></span><i class="bi bi-arrow-up-left go"></i></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <a class="brand" href="#home" aria-label="بكالوريا كود - الرئيسية">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="16" fill="#0e1c3d"/>
+          <path d="M26 20 14 32l12 12M38 20l12 12-12 12" fill="none" stroke="#2f8cff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-text"><strong>بكالوريا كود</strong><small>Baccalaureate Code</small></span>
+      </a>
+      <p>© <span id="year">2026</span> بكالوريا كود. المهندس عبدالرحمن محمود.</p>
+      <a class="to-top" href="#top">للأعلى <i class="bi bi-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
