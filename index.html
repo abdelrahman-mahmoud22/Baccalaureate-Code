@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script>document.documentElement.classList.add("js");try{document.documentElement.dataset.theme=localStorage.getItem("bacc-theme")==="dark"?"dark":"light"}catch(e){document.documentElement.dataset.theme="light"}</script>
+  <script>(function(){var d=document.documentElement,t=null;d.classList.add("js");try{t=localStorage.getItem("bacc-theme")}catch(e){}if(t!=="dark"&&t!=="light"){t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}d.dataset.theme=t})()</script>
 </head>
 <body>
   <div class="progress" id="progress" aria-hidden="true"></div>
@@ -174,33 +174,3 @@
           <p class="section-sub">ابعتلي على واتساب. وتابع صفحة بكالوريا كود عشان يوصلك كل جديد.</p>
           <a class="btn btn-primary btn-lg btn-pulse" href="https://wa.me/201226050659?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86%D8%8C%20%D8%B9%D9%86%D8%AF%D9%8A%20%D8%B3%D8%A4%D8%A7%D9%84%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%A8%D9%83%D8%A7%D9%84%D9%88%D8%B1%D9%8A%D8%A7%20%D9%83%D9%88%D8%AF" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> كلمني على واتساب</a>
           <p class="contact-phone"><bdi>+20 122 605 0659</bdi></p>
-        </div>
-
-        <ul class="link-list">
-          <li><a href="https://facebook.com/share/19vQiYVnF3" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i><span><strong>صفحة بكالوريا كود</strong><small>Facebook</small></span><i class="bi bi-arrow-up-left go"></i></a></li>
-          <li><a href="https://www.facebook.com/share/1ChfyuAKzL/" target="_blank" rel="noopener noreferrer"><i class="bi bi-person-circle"></i><span><strong>حسابي الشخصي</strong><small>Facebook</small></span><i class="bi bi-arrow-up-left go"></i></a></li>
-          <li><a href="https://www.instagram.com/abdlrahman_mahmoud28/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i><span><strong>إنستجرام</strong><small><bdi>@abdlrahman_mahmoud28</bdi></small></span><i class="bi bi-arrow-up-left go"></i></a></li>
-          <li><a href="mailto:abdelrahman2210022@gmail.com"><i class="bi bi-envelope"></i><span><strong>البريد الإلكتروني</strong><small><bdi>abdelrahman2210022@gmail.com</bdi></small></span><i class="bi bi-arrow-up-left go"></i></a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-row">
-      <a class="brand" href="#home" aria-label="بكالوريا كود - الرئيسية">
-        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="16" fill="#0e1c3d"/>
-          <path d="M26 20 14 32l12 12M38 20l12 12-12 12" fill="none" stroke="#2f8cff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="brand-text"><strong>بكالوريا كود</strong><small>Baccalaureate Code</small></span>
-      </a>
-      <p>© <span id="year">2026</span> بكالوريا كود. المهندس عبدالرحمن محمود.</p>
-      <a class="to-top" href="#top">للأعلى <i class="bi bi-arrow-up"></i></a>
-    </div>
-  </footer>
-
-  <script src="js/data.js"></script>
-  <script src="js/app.js"></script>
-</body>
-</html>
