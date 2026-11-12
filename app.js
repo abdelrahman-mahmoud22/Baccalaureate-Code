@@ -368,6 +368,16 @@
     if (metaTheme) metaTheme.setAttribute("content", t === "dark" ? "#050b1c" : "#ffffff");
   }
   applyTheme(root.dataset.theme === "dark" ? "dark" : "light");
+
+  // لو الطالب ما اختارش وضع بنفسه، الموقع بيتبع إعدادات تليفونه (فاتح/داكن)
+  const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+  const onSystemChange = e => {
+    let saved = null;
+    try { saved = localStorage.getItem("bacc-theme"); } catch { /* التخزين غير متاح */ }
+    if (saved !== "dark" && saved !== "light") applyTheme(e.matches ? "dark" : "light");
+  };
+  if (systemDark.addEventListener) systemDark.addEventListener("change", onSystemChange);
+
   themeBtn.addEventListener("click", () => {
     const next = root.dataset.theme === "dark" ? "light" : "dark";
     root.classList.add("theme-anim");
