@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>بكالوريا كود | مذاكرة البرمجة لأولى وتانية ثانوي</title>
   <meta name="description" content="بكالوريا كود: بنك أسئلة وامتحانات وتسميعات وحل كويزات وتقييمات لطلاب أولى وتانية ثانوي، مع المهندس عبدالرحمن محمود.">
-  <meta name="theme-color" content="#050b1c">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_EG">
   <meta property="og:title" content="بكالوريا كود | مذاكرة البرمجة لأولى وتانية ثانوي">
@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script>document.documentElement.classList.add("js")</script>
+  <script>document.documentElement.classList.add("js");try{document.documentElement.dataset.theme=localStorage.getItem("bacc-theme")==="dark"?"dark":"light"}catch(e){document.documentElement.dataset.theme="light"}</script>
 </head>
 <body>
   <div class="progress" id="progress" aria-hidden="true"></div>
@@ -42,6 +42,8 @@
         <a href="#features">المميزات</a>
         <a href="#contact">تواصل</a>
       </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="التبديل للوضع الداكن" aria-pressed="false"><i class="bi bi-moon-stars"></i><i class="bi bi-sun"></i></button>
 
       <a class="btn btn-primary btn-sm header-cta" href="#library">ادخل المكتبة</a>
     </div>
@@ -86,7 +88,7 @@
       </div>
     </section>
 
-        <div class="marquee" aria-hidden="true">
+    <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
         <div class="marquee-group"><span>Programming</span><span>Artificial Intelligence</span><span>Problem Solving</span><span>Computer Science</span></div>
         <div class="marquee-group"><span>Programming</span><span>Artificial Intelligence</span><span>Problem Solving</span><span>Computer Science</span></div>
