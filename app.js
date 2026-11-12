@@ -357,6 +357,25 @@
     body.appendChild(last);
   }
 
+  /* ---------- الوضع الفاتح / الداكن ---------- */
+  const root = document.documentElement;
+  const themeBtn = $("#themeToggle");
+  const metaTheme = $('meta[name="theme-color"]');
+  function applyTheme(t) {
+    root.dataset.theme = t;
+    themeBtn.setAttribute("aria-pressed", String(t === "dark"));
+    themeBtn.setAttribute("aria-label", t === "dark" ? "التبديل للوضع الفاتح" : "التبديل للوضع الداكن");
+    if (metaTheme) metaTheme.setAttribute("content", t === "dark" ? "#050b1c" : "#ffffff");
+  }
+  applyTheme(root.dataset.theme === "dark" ? "dark" : "light");
+  themeBtn.addEventListener("click", () => {
+    const next = root.dataset.theme === "dark" ? "light" : "dark";
+    root.classList.add("theme-anim");
+    applyTheme(next);
+    try { localStorage.setItem("bacc-theme", next); } catch { /* التخزين غير متاح */ }
+    setTimeout(() => root.classList.remove("theme-anim"), 450);
+  });
+
   /* ---------- تأثيرات الحركة ---------- */
   const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
   const header = $(".site-header");
